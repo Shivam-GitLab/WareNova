@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: WareNova
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/warenova_db
+    username: postgres
+    password: ShivamJha91
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: false
+
+  jackson:
+    default-property-inclusion: non_null
+
+server:
+  port: 8080
+
+jwt:
+  secret: WarenovaSecureJwtSecretKeyForAuthenticationSystem2026VeryStrongKey
+  expiration: 86400000
+
+logging:
+  level:
+    org.springframework: INFO
+    com.warenova.wms: DEBUG
+  pattern:
+    console: "%green(%d{HH:mm:ss.SSS}) %blue(%-5level) %red([%thread]) %yellow(%logger{15}) - %msg%n"

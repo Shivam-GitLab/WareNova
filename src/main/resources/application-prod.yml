@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://prod-db:5432/warenova_db
+    username: postgres
+    password: ShivamJha91
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    open-in-view: false
+
+  jackson:
+    default-property-inclusion: non_null
+
+server:
+  port: 8080
+
+logging:
+  level:
+    org.springframework: WARN
+    com.warenova.wms: INFO
