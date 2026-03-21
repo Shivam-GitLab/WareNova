@@ -1,1 +1,1 @@
-Warehouse Mgmt.
+Warehouse Mgmt. App
